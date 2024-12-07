@@ -6,97 +6,38 @@
     <title>Registrar Materias</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/registerM.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
 </head>
-<body class="bg-light">
-
-    <!--Header-->
-    <header class="bg-primary text-white py-3 mb-4">
-        <div class="container d-flex aling-items-center- justify-content-between">
-            <div class="d-flex aling-items-center">
-                <!--Logo-->
-                <img src="Images/quipux_logo.jpg" alt="Logo del Colegio" class="logo-quipux me-3">
-                <h1 class="h4 mb-0">COLEGIO QUIPUX</h1>
-            </div>
-            <nav>
-                <a href="#" class="text-white text-decoration-none me-3">Inicio</a>
-                <a href="#" class="text-white text-decoration-none">Contacto</a>
-            </nav>
-        </div>
-    </header>
-
+<body>
     <div class="container">
-        <h1 class="mb-4 text-center">Registro de Materias</h1>
+        <header>
+            <div class="logo-container">
+                <img src="Images/quipux_logo.jpg" alt="Logo" class="logo">
+            </div>
+        </header>
 
-        <!--Formulario para añadir materias-->
+        <!--Formulario Principal-->
 
-        <div class="card mb-4">
-            <div class="card-header bg-primary text-white">
-                Añadir Nueva Materia
-            </div>
-            <div class="card-body">
-                <form id="form-materia">
-                    <div class="mb-3">
-                        <label for="nombreMateria" class="form-label">Nombre de la Materia</label>
-                        <input type="text" class="form-control" id="nombreMateria" placeholder="Ej. Matemáticas" required>                  
-                    </div>
-                    <div class="mb-3">
-                        <label for="codigoMateria" class="form-label">Código de la Materia</label>
-                        <input type="text" class="form-control" id="codigoMateria" placeholder="Ej. MAT001" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="descripcionMateria" class="form-label">Descripción</label>
-                        <textarea class="form-control" id="descripcionMateria" rows="3" placeholder="Breve descripción de la materia"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Guardar Materia</button>
-                </form>
-            </div>
-        </div>
+        <main>
+            <h1>Registrar Materias</h1>
+            <form>
+                <label for="documento">Documento Estudiante:</label>
+                <input type="text" id="documento" placeholder="Ingrese el documento">
 
-        <!--Filtro-->
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <input type="text" class="form-control" id="buscarMateria" placeholder="Buscar materia por nombre o código">
-            </div>            
-        </div>
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" placeholder="Ingrese el Curso">
 
-        <!--Listado de materias-->
-        <div class="card mb-4">
-            <div class="card-header bg-secondary text-whhite">
-                Listado de Materias
-            </div>
-            <div class="card-body">
-                <table class="table table-bordered table.striped">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Nombre</th>
-                            <th>Código</th>
-                            <th>Descripción</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tablaMaterias">
-                        <!--Aquí debemos cargar las materias -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
+                <label for="materia">Nombre de la Materia:</label>
+                <input type="text" id="materia" placeholder="Ingrese la materia">
 
-        <!--Materias Registradas por el estudiante-->
-        <div class="card">
-            <div class="card-header bg-info text-white">
-                Materia por Estudiante
-            </div>
-            <div class="card-body">
-                <div id="materiasPorEstudiante">
-                    <!--Contenido de materias por estudiante-->
-                </div>
-            </div>
-        </div>
+                <label for="creditos">Créditos:</label>
+                <input type="number" id="creditos" placeholder="Ingrese el número de créditos">
+
+                <button type="submit">Registrar Materia</button>
+            </form>
+            <a href="#" class="volver">Volver</a>
+        </main>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
