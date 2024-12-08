@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Estudiantes</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/registerE.css">
+    <link rel="stylesheet" href="assets/css/registerM.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body>
-    
+<body>  
+    <div class="logo">
+        <img src="assets/css/img/quipux_logo.jpg" alt="Logo"/>
+    </div>
+
+    <div class="background">
+        <div class="black-section">
+            <div class="rounded-curve"></div>
+        </div>
+        <div class="blue-section"></div>
+    </div>
+
+
+    <div class="form-container">
+        <main>
+            <h1>Registrar Estudiante</h1>
+            <form method="submit" class="formulario">
+                <label for="documento">Usuario (documento):</label>
+                <input type="text" id="documento" class="documento" placeholder="Ingrese el documento" required>
+
+                <label for="documento">Correo Electrónico:</label>
+                <input type="text" class="email" placeholder="tucorreo@email.com" required>
+
+                <label for="documento">Contraseña:</label>
+                <input type="password" class="contraseña" required><br>
+
+                <label for="documento">Confirmar contraseña:</label>
+                <input type="password" class="confirmarContra" required>
+
+                <button type="submit">Registrar</button>
+            </form>
+            <a href="index.html" class="back-link">Volver</a>
+        </main>
+    </div>
+
+    <script src="assets/JS/register.js" ></script>
 </body>
 </html>
