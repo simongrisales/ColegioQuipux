@@ -155,24 +155,3 @@ body {
     height: auto;
     object-fit: cover;
 }
-
-.navbar {
-    background-color: #f8f9fa;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-}
-
-.navbar-brand {
-    color: #007bff;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-    color: #333;
-    padding: 8px 12px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff;
-}

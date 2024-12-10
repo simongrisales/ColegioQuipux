@@ -1,0 +1,18 @@
+body {
+    background-image: url('../img/fondoQuipux.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.btn-container {
+    text-align: center;
+}
+.btn {
+    margin: 10px;
+}
