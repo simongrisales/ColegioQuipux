@@ -30,6 +30,7 @@ body {
     z-index: 10;
     border-radius: 20%;
     border: 4px solid #007bff;
+    background-color: white;
 }
 
 .logo img {
@@ -140,7 +141,7 @@ body {
     width: 450px;
     height: 85px;
     position: absolute;
-    top: 10%;
+    top: 4%;
     border-radius: 10%;
     border: 4px solid #007bff;
     display: flex;
