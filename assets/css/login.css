@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -10,13 +10,13 @@ body{
     overflow: hidden;
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -32,13 +32,13 @@ body{
     border: 4px solid #007bff;
 }
 
-.logo img{
+.logo img {
     width: 110px;
     height: 110px;
     object-fit: contain;
 }
 
-.background{
+.background {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ body{
     z-index: -1;
 }
 
-.black-section{
+.black-section {
     position: absolute;
     top: 0;
     height: 60%;
@@ -56,7 +56,7 @@ body{
     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
 }
 
-.blue-section{
+.blue-section {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -64,7 +64,7 @@ body{
     background-color: #007bff;
 }
 
-.form-container{
+.form-container {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -79,26 +79,26 @@ body{
     z-index: 2;
 }
 
-.form-container h1{
+.form-container h1 {
     font-size: 2rem;
     text-align: center;
     color: #007bff;
     margin-bottom: 40px;
-    margin-top: 60px;;
+    margin-top: 60px;
 }
 
-.form-container form{
+.form-container form {
     display: flex;
     flex-direction: column;
 }
 
-.form-container label{
+.form-container label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
 
-.form-container input{
+.form-container input {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -106,7 +106,7 @@ body{
     font-size: 1rem;
 }
 
-.form-container button{
+.form-container button {
     padding: 10px;
     background-color: #000;
     color: #007bff;
@@ -118,11 +118,11 @@ body{
     transition: background-color 0.3s;
 }
 
-.form-container button:hover{
+.form-container button:hover {
     background-color: #0056b3;
 }
 
-.form-container .back-link{
+.form-container .back-link {
     display: block;
     margin-top: 10px;
     text-align: center;
@@ -131,29 +131,48 @@ body{
     font-size: 0.9rem;
 }
 
-.form-container .back-link:hover{
+.form-container .back-link:hover {
     text-decoration: underline;
 }
 
-
-
 .encabezado {
     background-color: white;
-    width: 450px;          
-    height: 85px;          
-    position: absolute;    
-    top: 3%;               
-    border-radius: 10%;    
-    border: 4px solid #007bff; 
-    display: flex;         
-    align-items: center;   
-    justify-content: center
-  }
-  
-  .encabezado img {
-    max-width: 100%;     
-    max-height: 100%;      
-    width: auto;           
-    height: auto;        
-    object-fit: cover;     
-  }
+    width: 450px;
+    height: 85px;
+    position: absolute;
+    top: 10%;
+    border-radius: 10%;
+    border: 4px solid #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.navbar-brand {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    padding: 8px 12px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
