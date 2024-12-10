@@ -1,14 +1,11 @@
-body {
-  background-color: #f8f9fa;
-}
 .navbar {
-  background-color: #007bff;
+  background-color: #0d6efd;
 }
 .navbar-brand, .navbar-nav .nav-link {
-  color: #fff;
+  color: #ffffff;
 }
 .card {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px #0d6dfdc9;
   border: none;
   margin-bottom: 1rem;
 }
@@ -21,6 +18,6 @@ body {
   object-fit: cover;
 }
 footer {
-  background-color: #007bff;
+  background-color: #0d6efd;
   color: white;
 }
